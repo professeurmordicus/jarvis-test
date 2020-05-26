@@ -1,4 +1,6 @@
-*AJOUTE (*) A LA LISTE*==echo "(1)" >> ~/listedescourses.txt && say "J'ai ajouté (1) à la liste"
+*ENLèVE (*) (*) * STOCK*==echo "(1)" >> ~/(2).txt && say "J'ai enlevé (1) capsule du stock."
+
+
 *SUPPRIME*LA LISTE*|*VIDE*LA LISTE*==say "Veux tu confirmer la supression de la liste des courses?"
 >*OUI*==echo "" > ~/listedescourses.txt && say "Ok la liste est effacée"
 >*NON*==say "Je ne la supprime pas"
