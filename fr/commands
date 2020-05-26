@@ -1,4 +1,4 @@
-*ENLEVE (*) CAPSULE * STOCK*==mv ~/capsules.txt ~/capsules.old && cat ~/capsules.old >>var &&  var2=(1)  &&  echo "$(($var+$var2))" > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+*ENLEVE (*) CAPSULE * STOCK*==mv ~/capsules.txt ~/capsules.old && cat ~/capsules.old >>var &&  var2=(1)  && res=($var+$var2) &&  echo "$res" > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 *REMET*LE STOCK A ZERO*==say "Tu confirmes la réinitialisation du stock?"
 >*OUI*==echo "0" > ~/capsules.txt && say "Ok le stock est remis à zéro."
 >*NON*==say "Je laisse le stock en l'état."
