@@ -25,7 +25,7 @@ UseSTARTTLS=YES
 Puis sauvegarder : Ctrl+X puis O pour oui et entrer
 
 ## Description
-Gestion de la liste des courses
+Gestion de la liste des courses TEST
 
 Pensez à modifier "VOTREEMAIL" et "VOTREPRENOM"
 
