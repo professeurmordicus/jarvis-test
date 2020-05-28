@@ -1,8 +1,8 @@
-*ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+*ENLEVE (*) CAPSULE* STOCK*== var=$((1)) && echo $(($(cat ~/capsules.txt)+$(var))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+=> A TESTER!!
 
 
-
-*BLABLABACKUP *ENLEVE (*) CAPSULE * STOCK*== var=$(cat ~/capsules.txt)  && echo $((var+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+*BLABLABACKUP *ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 
 
 
