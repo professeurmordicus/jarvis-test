@@ -19,7 +19,7 @@
 
 
 
-
+monresult=$conv
 
 
 test_math () {
