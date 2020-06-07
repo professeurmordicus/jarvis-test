@@ -1,4 +1,6 @@
-*ENLEVE (*) CAPSULE* STOCK*== var=$((1)) && echo $(($(cat ~/capsules.txt)+$(var))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+*ENLEVE (*) CAPSULE* STOCK*== var=$((1)) && echo $(($(cat ~/capsules.txt)+$(var))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock." &&  echo $(cat ~/capsules.txt)
+
+
 => A TESTER!!
 
 
