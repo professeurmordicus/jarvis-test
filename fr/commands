@@ -1,3 +1,7 @@
+*test (*) == say "(1)."
+
+Faire fonctionner le test, puis l'intégrer à la commande "Enleve...".
+
 *ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 
 *REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
