@@ -15,3 +15,58 @@
 #        the_answer_is) echo "La réponse est $2";;
 #    esac
 #} 
+
+
+
+
+
+
+
+test_math () {
+conv=" "
+if [[ $1 =~ "zéro" ]] ; then
+conv=0
+fi
+
+if [[ $1 =~ "un" ]] ; then
+conv=1
+fi
+
+if [[ $1 =~ "de" ]] ; then
+conv=2
+fi
+
+if [[ $1 =~ "trois" ]] ; then
+conv=3
+fi
+
+if [[ $1 =~ "quatre" ]] ; then
+conv=4
+fi
+
+if [[ $1 =~ "cinq" ]] ; then
+conv=5
+fi
+
+if [[ $1 =~ "six" ]] ; then
+conv=6
+fi
+
+if [[ $1 =~ "sept" ]] ; then
+conv=7
+fi
+
+if [[ $1 =~ "huit" ]] ; then
+conv=8
+fi
+
+if [[ $1 =~ "neuf" ]] ; then
+conv=9
+fi
+
+if [[ $conv == " " ]] ; then
+conv=$1
+
+fi
+return
+}
