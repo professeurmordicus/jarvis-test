@@ -1,10 +1,12 @@
 *TUPEPA (*)==test_math && say "On obtient $monresult."
 
-
+=>TESTER "TUPEPA" avec les modifs actuelles du fichier function.sh.
 
 *ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 
 Faire fonctionner le test, puis l'intégrer à la commande "Enleve...".
+- Permettre d'ajouter du matos si jamais on re-range quelque chose.
+- En dernier, envoyer par mail.
 
 *REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
 >*OUI*==echo "0" > ~/capsules.txt && say "Ok le matériel utilisé est remis à zéro."
