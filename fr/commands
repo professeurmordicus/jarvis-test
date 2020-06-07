@@ -1,4 +1,4 @@
-*TUPEPA (*)== say "On obtient (1)."
+*TUPEPA (*)==test_math((1)) && say "On obtient $(conv)."
 
 
 
