@@ -1,4 +1,4 @@
-*ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules $(cat ~/capsules.txt) du stock."
+*ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 
 
 
