@@ -1,8 +1,10 @@
 *ESSAYE (*) POUR VOIR* == say "On obtient (1)."
 
-Faire fonctionner le test, puis l'intégrer à la commande "Enleve...".
+
 
 *ENLEVE (*) CAPSULE* STOCK*== echo $(($(cat ~/capsules.txt)+(1))) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
+
+Faire fonctionner le test, puis l'intégrer à la commande "Enleve...".
 
 *REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
 >*OUI*==echo "0" > ~/capsules.txt && say "Ok le matériel utilisé est remis à zéro."
