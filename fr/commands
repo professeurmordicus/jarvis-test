@@ -1,4 +1,4 @@
-*test (*) == say "(1)."
+*testons (*) == say "(1)."
 
 Faire fonctionner le test, puis l'intégrer à la commande "Enleve...".
 
