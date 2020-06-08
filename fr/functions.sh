@@ -18,7 +18,7 @@
 
 ptittest () {
 
-mavar=`echo "(1)"`
+mavar=`echo "$order"`
 test_math $mavar
 monresult=$conv
 
