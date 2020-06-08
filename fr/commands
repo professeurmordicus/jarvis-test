@@ -1,4 +1,4 @@
-*TUPEPA (*)==ptittest && say "On obtient $monresult."
+*TUPEPA (*)==ptittest((1)) && say "On obtient $monresult."
 
 =>TESTER "TUPEPA" avec les modifs actuelles du fichier function.sh.
 
