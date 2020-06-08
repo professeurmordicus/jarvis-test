@@ -16,12 +16,13 @@
 #    esac
 #} 
 
-
+ptittest () {
 
 mavar=`echo "(1)"`
 test_math $mavar
 monresult=$conv
 
+}
 
 test_math () {
 conv=" "
