@@ -20,8 +20,8 @@ fct_conv () {
 
 test_math $1
 convertchiffre=$conv
-
 }
+
 
 test_math () {
 conv=" "
