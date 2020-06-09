@@ -2,7 +2,7 @@
 
 
 
-*ENLEVE (*) CAPSULE* STOCK*== say "(1)" && fct_conv "(1)" && echo $(($(cat ~/capsules.txt)+$convertchiffre)) > ~/capsules.txt && say "J'ai enlevé $convertchiffre capsules du stock."
+*ENLEVE (*) CAPSULE* STOCK*== fct_conv "(1)" && echo $(($(cat ~/capsules.txt)+$convertchiffre)) > ~/capsules.txt && say "J'ai enlevé (1) capsules du stock."
 
 Voir si on peut optimiser "TUPEPA", puis intégrer son fonctionnement à la commande "Enleve...".
 - Permettre d'ajouter du matos si jamais on re-range quelque chose.
