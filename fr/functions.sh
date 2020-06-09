@@ -16,11 +16,10 @@
 #    esac
 #} 
 
-ptittest () {
+fct_conv () {
 
-#mavar=`echo "$1"`
 test_math $1
-monresult=$conv
+convertchiffre=$conv
 
 }
 
