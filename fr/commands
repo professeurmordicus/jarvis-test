@@ -1,4 +1,4 @@
-*TUPEPA (*)==ptittest "(1)" && say "On obtient $monresult."
+*TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
 
 
 
