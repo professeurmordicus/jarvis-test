@@ -18,6 +18,7 @@
 
 fct_conv () {
 
+nbcompris=(1)
 test_math $1
 convertchiffre=$conv
 }
