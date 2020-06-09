@@ -4,9 +4,13 @@
 
 *ENLEVE (*) CAPSULE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/capsules.txt)+$convertchiffre)) > ~/capsules.txt && say "J'ai enlevé $nbcompris capsules du stock."
 
-Voir si on peut optimiser "TUPEPA", puis intégrer son fonctionnement à la commande "Enleve...".
+
+- Présenter les choses avec des fourchettes et des cuillères.
 - Permettre d'ajouter du matos si jamais on re-range quelque chose.
 - En dernier, envoyer par mail.
+- Adapter le readme.
+- Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
+
 
 *REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
 >*OUI*==echo "0" > ~/capsules.txt && say "Ok le matériel utilisé est remis à zéro."
