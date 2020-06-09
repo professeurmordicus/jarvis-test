@@ -18,8 +18,8 @@
 
 ptittest () {
 
-mavar=`echo "$1"`
-test_math $mavar
+#mavar=`echo "$1"`
+test_math $1
 monresult=$conv
 
 }
