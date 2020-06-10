@@ -25,12 +25,22 @@ UseSTARTTLS=YES
 Puis sauvegarder : Ctrl+X puis O pour oui et entrer
 
 ## Description
-Gestion de la liste des courses TEST
+On n'est pas des codeurs, on est pas très au fait de la domotique, ni particulièrement affûté sur la façon de gérer la création d'un plugin comme celui là... Mais bon sang, qu'est ce qu'on aime ça! ^^.
+
+Alors voilà, notre plugin de gestion de stock, afin de faire des inventaires, par exemple, du matériel que vous utilisez aucours d'une session de bricolage ou autre... Facile à personnaliser selon vos besoins, on espère qu'il vous sera utile!
+
+N'hésitez pas à nous faire des retours si le code vous semble améliorable, ou si vous avez n'importe quelle suggestion d'optimisation ou d'ajout de fonctionnalité!
+
+Si vous souhaitez le forker, s'il vous plait, faites simplement comme nous, et citez nous en tant que source! Merci d'avance!
+
+---
 
 Pensez à modifier "VOTREEMAIL" et "VOTREPRENOM"
 
 ## Usage
 ```
+!!A PERSONNALISER QUAND LE PLUGIN SERA FINALISE!!
+
 `*AJOUTE (*) A LA LISTE*==echo "(1)" >> ~/listedescourses.txt && say "J'ai ajouté (1) à la liste"`
 `*SUPPRIME*LA LISTE*|*VIDE*LA LISTE*==say "Veux tu confirmer la supression de la liste des courses?"`
 `>*OUI*==echo "" > ~/listedescourses.txt && say "Ok la liste est effacée"`
