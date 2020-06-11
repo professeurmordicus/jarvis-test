@@ -1,11 +1,8 @@
-*TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
-
-
-
 *ENLEVE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)+$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai enlevé $nbcompris fourchettes du stock."
 *REMET* (*) FOURCHETTE* STOCK*|*RANGE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)-$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai remis $nbcompris fourchettes dans le stock."
 
-- Permettre d'ajouter du matos si jamais on re-range quelque chose.
+*ENLEVE* (*) CUILLERE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)+$convertchiffre)) > ~/madeofstock/cuilleres.txt && say "J'ai enlevé $nbcompris cuillères du stock."
+*REMET* (*) CUILLERE* STOCK*|*RANGE* (*) CUILLERE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)-$convertchiffre)) > ~/madeofstock/cuilleres.txt && say "J'ai remis $nbcompris cuillères dans le stock."
 
 
 
@@ -15,6 +12,8 @@
 - Faire la liste du matériel que peut gérer le plugin?
 - Adapter le readme.
 - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
+- Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
+
 
 
 *REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
