@@ -64,4 +64,6 @@ Jarvis: La liste des courses a été envoyer à VOTREPRENOM
 ```
 
 ## Author
-[tchoul] et [godinperson] (https://github.com/tchoul)
+Plugin développé par A COMPLETER pour le projet "Open Jarvis" de Alexylem (https://openjarvis.com).
+Basé sur les plugins "Liste de course" de Tchoul et Godinperson (https://github.com/tchoul/jarvis-liste-des-courses), et "Jarvis-math" de JB Hallez (https://github.com/Jean-Bernard-Hallez/jarvis-math).
+Merci à eux pour leur travail.
