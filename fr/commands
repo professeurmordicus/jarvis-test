@@ -3,7 +3,7 @@
 
 
 *ENLEVE (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)+$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai enlevé $nbcompris fourchettes du stock."
-*RANGE (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)-$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai remis $nbcompris fourchettes dans le stock."
+*REMET (*) FOURCHETTE* STOCK*|*RANGE (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)-$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai remis $nbcompris fourchettes dans le stock."
 
 - Permettre d'ajouter du matos si jamais on re-range quelque chose.
 
