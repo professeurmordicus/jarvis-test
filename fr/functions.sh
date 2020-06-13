@@ -80,5 +80,5 @@ fourchettesutilisees=$(cat ~/madeofstock/fourchettes.txt)";
 fi
 
 materielutilise=$fourchettesutilisees
-
+return
 }
