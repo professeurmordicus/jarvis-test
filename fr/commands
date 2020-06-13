@@ -10,7 +10,7 @@
 - Faire commande "COMBIEN de trucs a-t-on utiliser"...
 
 
-
+- Faire fonctionner commande "LISTE UTILISEE", qui fonctionne déjà, mais optimiser le fonctionnement de matosutilise.txt...
 - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 - En dernier, envoyer par mail.
 - Faire la liste du matériel que peut gérer le plugin?
