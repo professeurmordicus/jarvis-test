@@ -71,3 +71,13 @@ conv=$1
 fi
 return
 }
+
+
+fct_matosutil() {
+
+if [ -f "~/madeofstock/fourchettes.txt" ];then
+fourchettesutilisees=$(cat ~/madeofstock/fourchettes.txt)";
+fi
+
+echo "On a utilisé $fourchettesutilisees fourchettes.";
+}
