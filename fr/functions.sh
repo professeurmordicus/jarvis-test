@@ -87,7 +87,7 @@ fi
 
 
 
-#echo $(cat ~/madeofstock/fourchettes.txt) >> ~/madeofstock/matosutilise.txt
-materielutilise="$fourchettesutilisees $cuilleresutilisees"
+echo $fourchettesutilisees $cuilleresutilisees >> ~/madeofstock/matosutilise.txt
+#materielutilise="$fourchettesutilisees $cuilleresutilisees"
 
 }
