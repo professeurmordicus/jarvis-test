@@ -88,6 +88,6 @@ fi
 
 
 #echo $(cat ~/madeofstock/fourchettes.txt) >> ~/madeofstock/matosutilise.txt
-materielutilise=$fourchettesutilisees + cuilleresutilisees
+materielutilise="$fourchettesutilisees $cuilleresutilisees"
 
 }
