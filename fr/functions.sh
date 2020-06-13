@@ -75,7 +75,12 @@ return
 
 fct_matosutil() {
 
-if [ -f "~/madeofstock/fourchettes.txt" ];then
+#if [ -e ~/madeofstock/fourchettes.txt ]
+#then
+#    echo "Mon fichier existe"
+
+if [ -f "~/madeofstock/fourchettes.txt" ]
+then
 echo $(cat ~/madeofstock/fourchettes.txt) >> ~/madeofstock/matosutilise.txt
 fourchettesutilisees=$(cat ~/madeofstock/fourchettes.txt)
 
