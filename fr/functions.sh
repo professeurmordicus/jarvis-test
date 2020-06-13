@@ -77,13 +77,15 @@ fct_matosutil() {
 
 if [ -e ~/madeofstock/fourchettes.txt ]
 then
-    echo $(cat ~/madeofstock/fourchettes.txt) >> ~/madeofstock/matosutilise.txt
+    
     fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
 
 fi
 
 #return $fourchettesutilisees
 
-#materielutilise=$fourchettesutilisees
+
+#echo $(cat ~/madeofstock/fourchettes.txt) >> ~/madeofstock/matosutilise.txt
+materielutilise=$fourchettesutilisees
 
 }
