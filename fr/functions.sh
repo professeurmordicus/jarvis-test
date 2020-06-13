@@ -79,5 +79,5 @@ if [ -f "~/madeofstock/fourchettes.txt" ];then
 fourchettesutilisees=$(cat ~/madeofstock/fourchettes.txt)";
 fi
 
-echo "On a utilisé $fourchettesutilisees fourchettes.";
+materielutilise='On a utilisé $fourchettesutilisees fourchettes'.
 }
