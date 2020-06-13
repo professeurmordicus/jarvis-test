@@ -26,7 +26,7 @@
 
 #*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==say "On a utilisé $(cat ~/madeofstock/fourchettes.txt) fourchettes, $(cat ~/madeofstock/cuilleres.txt) cuilleres."
 
-*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $fourchettesutilisees."
+*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $materielutilise."
 
 
 
