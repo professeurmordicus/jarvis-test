@@ -80,4 +80,5 @@ fourchettesutilisees=$(cat ~/madeofstock/fourchettes.txt)";
 fi
 
 materielutilise='On a utilisé $fourchettesutilisees fourchettes'.
+return
 }
