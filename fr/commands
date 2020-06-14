@@ -11,6 +11,7 @@
 
 
 - Faire fonctionner commande "LISTE UTILISEE", qui fonctionne déjà, mais optimiser le fonctionnement de matosutilise.txt...
+=> Quand les fichiers types fourchettes.txt n'existent pas, la variable fourchettesutilisees se met à 0, on se retrouve avec une liste "0 ceci, 0 cela", pour éviter ça, voir à rajouter un "else" à la condition "if fourchettes.txt existe", ou imbriquer une deuxième condition pour vérifier si la valeur dans le fichier fourchettes.txt = 0. Dans ce cas, fouchettesutilisees devra etre égale a "".
 - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 - En dernier, envoyer par mail.
 - Faire la liste du matériel que peut gérer le plugin?
