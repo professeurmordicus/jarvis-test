@@ -75,6 +75,12 @@ return
 
 fct_matosutil() {
 
+if [ -e ~/madeofstock/matosutilise.txt ]
+then
+    rm ~/madeofstock/matosutilise.txt
+fi
+
+
 if [ -e ~/madeofstock/fourchettes.txt ]
 then
     fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
