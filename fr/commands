@@ -7,7 +7,7 @@
 
 
 *COMBIEN* (*)== CONTINUER CETTE COMMANDE.
-- Faire commande "COMBIEN de trucs a-t-on utiliser"...
+- Faire commande "COMBIEN de xxx a-t-on utiliser"...
 
 
 - Faire fonctionner commande "LISTE UTILISEE", qui fonctionne déjà, mais optimiser le fonctionnement de matosutilise.txt...
@@ -24,7 +24,6 @@
 >*OUI*==echo "0" > ~/madeofstock/fourchettes.txt && echo "0" > ~/madeofstock/cuilleres.txt && say "Ok le matériel utilisé est remis à zéro."
 >*NON*==say "Je laisse la liste en l'état."
 
-#*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==say "On a utilisé $(cat ~/madeofstock/fourchettes.txt) fourchettes, $(cat ~/madeofstock/cuilleres.txt) cuilleres."
 
 
 #*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $materielutilise."
