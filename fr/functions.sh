@@ -81,9 +81,11 @@ then
 fi
 
 
-if [ -e ~/madeofstock/fourchettes.txt ]
+if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ]
 then
     fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
+else
+    fourchettesutilisees=""
 fi
 
 if [ -e ~/madeofstock/cuilleres.txt ]
