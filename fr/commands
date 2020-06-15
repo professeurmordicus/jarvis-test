@@ -15,6 +15,7 @@
 on se retrouve avec une liste "0 ceci, 0 cela", pour éviter ça, voir à rajouter un "else" à la
 condition "if fourchettes.txt existe", ou imbriquer une deuxième condition pour vérifier si la valeur dans 
 le fichier fourchettes.txt = 0. Dans ce cas, fouchettesutilisees devra etre égale a "".
+=> TESTER LE NOUVEAU CODE DANS LES FOURCHETTES.
 
 - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 - En dernier, envoyer par mail.
