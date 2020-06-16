@@ -88,9 +88,12 @@ else
     fourchettesutilisees=""
 fi
 
-if [ -e ~/madeofstock/cuilleres.txt ]
+
+if [ -e ~/madeofstock/cuilleres.txt ] && [ $(cat ~/madeofstock/cuilleres.txt) != 0 ]
 then
     cuilleresutilisees="$(cat ~/madeofstock/cuilleres.txt) cuilleres"
+else
+    cuilleresutilisees=""
 fi
 
 
