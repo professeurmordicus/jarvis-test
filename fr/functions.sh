@@ -100,12 +100,11 @@ fi
 
 
 
-echo $fourchettesutilisees $cuilleresutilisees >> ~/madeofstock/matosutilise.txt
+echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
 
 if [ ! -s $~/madeofstock/matosutilise.txt ]
-#if [ $(cat ~/madeofstock/matosutilise.txt) = "" ]
 then
-    echo "aucun matériel pour le moment." > ~/madeofstock/matosutilise.txt
+    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
 fi
 
 
