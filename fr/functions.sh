@@ -83,7 +83,7 @@ fi
 
 if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ]
 then
-    fourchettesutilisees="On a utilisé : $(cat ~/madeofstock/fourchettes.txt) fourchettes"
+    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
 else
     fourchettesutilisees=""
 fi
@@ -91,7 +91,7 @@ fi
 
 if [ -e ~/madeofstock/cuilleres.txt ] && [ $(cat ~/madeofstock/cuilleres.txt) != 0 ]
 then
-    cuilleresutilisees="$(cat ~/madeofstock/cuilleres.txt) cuilleres"
+    cuilleresutilisees="$(cat ~/madeofstock/cuilleres.txt) cuillères"
 else
     cuilleresutilisees=""
 fi
@@ -100,12 +100,18 @@ fi
 
 
 
-echo $fourchettesutilisees $cuilleresutilisees > ~/madeofstock/matosutilise.txt
+echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
 
-if [ ! -s $~/madeofstock/matosutilise.txt ]
+
+if [[ $(cat ~/madeofstock/matosutilise.txt) != *[0-9]* ]]
 then
-    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
+   echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
 fi
+
+#if [ ! -s $~/madeofstock/matosutilise.txt ]
+#then
+#    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
+#fi
 
 
 }
