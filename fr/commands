@@ -29,9 +29,8 @@
 >*NON*==say "Je laisse la liste en l'état."
 
 
-
-#*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $materielutilise."
-*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $(cat ~/madeofstock/matosutilise.txt)."
+#*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $(cat ~/madeofstock/matosutilise.txt)."
+*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "$(cat ~/madeofstock/matosutilise.txt)."
 
 
 *ENVOI*LA*LIST*MAIL*==mpack -s "Contenu de la liste des courses" /home/pi/listedescourses.txt VOTREMAIL@hotmail.com && say "La liste des courses a été envoyer à VOTREPRENOM"
