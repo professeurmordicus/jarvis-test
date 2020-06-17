@@ -35,7 +35,9 @@ Si vous souhaitez le forker, s'il vous plait, faites simplement comme nous, et c
 
 ---
 
-Pensez à modifier "VOTREEMAIL" et "VOTREPRENOM"
+/!\ Pour que le plugin fonctionne, vous devez manuellement créer un dossier nommé "madeofstock" dans le dossier de l'utilisateur, par exemple, typiquement, dans /home/pi.
+
+Pensez à modifier "VOTREEMAIL" et "VOTREPRENOM".
 
 ## Usage
 ```
