@@ -100,7 +100,7 @@ fi
 
 
 
-echo "$fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
+echo $fourchettesutilisees $cuilleresutilisees > ~/madeofstock/matosutilise.txt
 
 if [ ! -s $~/madeofstock/matosutilise.txt ]
 then
