@@ -108,10 +108,4 @@ then
    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
 fi
 
-#if [ ! -s $~/madeofstock/matosutilise.txt ]
-#then
-#    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
-#fi
-
-
 }
