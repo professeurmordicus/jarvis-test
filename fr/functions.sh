@@ -83,7 +83,7 @@ fi
 
 if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ]
 then
-    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
+    fourchettesutilisees="On a utilisé : $(cat ~/madeofstock/fourchettes.txt) fourchettes"
 else
     fourchettesutilisees=""
 fi
@@ -100,12 +100,12 @@ fi
 
 
 
-echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
+echo $fourchettesutilisees $cuilleresutilisees > ~/madeofstock/matosutilise.txt
 
-#if [ ! -s $~/madeofstock/matosutilise.txt ]
-#then
-#    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
-#fi
+if [ ! -s $~/madeofstock/matosutilise.txt ]
+then
+    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
+fi
 
 
 }
