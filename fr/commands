@@ -6,14 +6,17 @@
 
 
 
+*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "$(cat ~/madeofstock/matosutilise.txt)"
+
+*REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
+>*OUI*==echo "0" > ~/madeofstock/fourchettes.txt && echo "0" > ~/madeofstock/cuilleres.txt && say "Ok le matériel utilisé est remis à zéro."
+>*NON*==say "Je laisse la liste en l'état."
+
+
+
 *COMBIEN* (*)== CONTINUER CETTE COMMANDE.
-- Faire commande "COMBIEN de xxx a-t-on utiliser"...
+- Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle.)
 
-
-- Faire fonctionner commande "LISTE UTILISEE", qui fonctionne déjà, mais optimiser le fonctionnement de matosutilise.txt...
-
-=> Trouve une solution pour que quand rien n'est utilisé, on affiche un "Rien n'est utilisé", plutôt que "On a utilisé ."
-(Peut être une condition qui vérifie si le fichier "matosutilisé.txt" est vide, ou contient un string?
 
 - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 - En dernier, envoyer par mail.
@@ -22,15 +25,6 @@
 - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
 - Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
 
-
-
-*REMET*LA LISTE A ZERO*==say "Tu confirmes la réinitialisation du matériel utilisé?"
->*OUI*==echo "0" > ~/madeofstock/fourchettes.txt && echo "0" > ~/madeofstock/cuilleres.txt && say "Ok le matériel utilisé est remis à zéro."
->*NON*==say "Je laisse la liste en l'état."
-
-
-#*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "On a utilisé $(cat ~/madeofstock/matosutilise.txt)."
-*LISTE* *UTILISE*|*QUOI*DANS*LA*LISTE*MAT*|*QUOI*SERVI*==fct_matosutil && say "$(cat ~/madeofstock/matosutilise.txt)"
 
 
 *ENVOI*LA*LIST*MAIL*==mpack -s "Contenu de la liste des courses" /home/pi/listedescourses.txt VOTREMAIL@hotmail.com && say "La liste des courses a été envoyer à VOTREPRENOM"
