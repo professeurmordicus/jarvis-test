@@ -98,7 +98,16 @@ fi
 
 
 
+
+
 echo $fourchettesutilisees $cuilleresutilisees >> ~/madeofstock/matosutilise.txt
+
+if [ $(cat ~/madeofstock/matosutilise.txt) = "" ]
+then
+    echo "aucun matériel pour le moment." >> ~/madeofstock/matosutilise.txt
+fi
+
+
 #materielutilise="$fourchettesutilisees $cuilleresutilisees"
 
 }
