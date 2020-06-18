@@ -26,6 +26,7 @@
 # - Voir si quand il manque un fichier "fourchettes ou cuilleres.txt", et qu'on enlève un truc du stock, la création du 
 # fichier se fait sans problème en mode son, ou si Jarvis dit que le fichier n'existe pas avant de le créer." Si tout va bien,
 # on peut envisager de modifier la commande "REMET LA LISTE A ZERO", en lui faisant faire un rm de tout le dossier "madeofstock".
+# - Voir si on peut intégrer la fonction "fct_conv" à la fonction "test_math".
 # - Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
 
 
