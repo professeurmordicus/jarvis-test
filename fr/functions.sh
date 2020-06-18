@@ -16,6 +16,9 @@
 #    esac
 #} 
 
+
+
+# Appel de la fonction "test_math" et récupération de son résultat.
 fct_conv () {
 
 test_math $1
@@ -23,6 +26,8 @@ convertchiffre=$conv
 }
 
 
+
+# Convertion des chiffres lettrés en nombres.
 test_math () {
 conv=" "
 if [[ $1 =~ "zéro" ]] ; then
@@ -73,39 +78,41 @@ return
 }
 
 
+
+# Récupération de chaque matériel utilisé pour en faire la liste.
 fct_matosutil() {
 
-if [ -e ~/madeofstock/matosutilise.txt ]
+if [ -e ~/madeofstock/matosutilise.txt ] # Si le fichier récapitulatif existe, on le delete pour le réinitialiser.
 then
     rm ~/madeofstock/matosutilise.txt
 fi
 
 
-if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ]
+if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ] # Si on a utilisé cet item et que son comptage est différent de 0,
 then
-    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes"
+    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes" # on l'inscrit dans la variable.
 else
-    fourchettesutilisees=""
+    fourchettesutilisees=""                                                 # Sinon, on met la variable à vide.
 fi
 
 
-if [ -e ~/madeofstock/cuilleres.txt ] && [ $(cat ~/madeofstock/cuilleres.txt) != 0 ]
+if [ -e ~/madeofstock/cuilleres.txt ] && [ $(cat ~/madeofstock/cuilleres.txt) != 0 ] # Si on a utilisé cet item et que son comptage est différent de 0,
 then
-    cuilleresutilisees="$(cat ~/madeofstock/cuilleres.txt) cuillères"
+    cuilleresutilisees="$(cat ~/madeofstock/cuilleres.txt) cuillères" # on l'inscrit dans la variable.
 else
-    cuilleresutilisees=""
+    cuilleresutilisees=""                                             # Sinon, on met la variable à vide.
 fi
 
 
 
-
-
+# Enregistrement de l'ensemble du matériel utilisé dans le fichier "matosutilise.txt".
 echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
 
 
-if [[ $(cat ~/madeofstock/matosutilise.txt) != *[0-9]* ]]
+if [[ $(cat ~/madeofstock/matosutilise.txt) != *[0-9]* ]] # Si le fichier ne contient aucun chiffre, c'est qu'on a encore rien utilisé.
 then
-   echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
+    # On y inscrit donc une phrase qui précise qu'on a encore rien utilisé.
+    echo "Je n'ai enregistré aucun matériel utilisé pour le moment." > ~/madeofstock/matosutilise.txt
 fi
 
 }
