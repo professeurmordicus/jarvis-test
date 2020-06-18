@@ -15,18 +15,18 @@
 
 
 *COMBIEN* (*)== CONTINUER CETTE COMMANDE.
-- Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle.)
+# - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle.)
 
 
-- Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
-- En dernier, envoyer par mail.
-- Faire la liste du matériel que peut gérer le plugin?
-- Adapter le readme.
-- Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
-- Voir si quand il manque un fichier "fourchettes ou cuilleres.txt", et qu'on enlève un truc du stock, la création du 
-fichier se fait sans problème en mode son, ou si Jarvis dit que le fichier n'existe pas avant de le créer." Si tout va bien,
-on peut envisager de modifier la commande "REMET LA LISTE A ZERO", en lui faisant faire un rm de tout le dossier "madeofstock".
-- Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
+# - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
+# - En dernier, envoyer par mail.
+# - Faire la liste du matériel que peut gérer le plugin?
+# - Adapter le readme.
+# - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
+# - Voir si quand il manque un fichier "fourchettes ou cuilleres.txt", et qu'on enlève un truc du stock, la création du 
+# fichier se fait sans problème en mode son, ou si Jarvis dit que le fichier n'existe pas avant de le créer." Si tout va bien,
+# on peut envisager de modifier la commande "REMET LA LISTE A ZERO", en lui faisant faire un rm de tout le dossier "madeofstock".
+# - Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
 
 
 
