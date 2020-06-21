@@ -74,7 +74,7 @@ if [[ $conv == " " ]] ; then
 convertchiffre=$1
 
 fi
-return
+# return
 }
 
 
