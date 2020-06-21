@@ -1,8 +1,8 @@
-*ENLEVE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)+$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai enlevé $nbcompris fourchettes du stock."
-*REMET* (*) FOURCHETTE* STOCK*|*RANGE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)-$convertchiffre)) > ~/madeofstock/fourchettes.txt && say "J'ai remis $nbcompris fourchettes dans le stock."
+*ENLEVE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && test_math "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)+$conv)) > ~/madeofstock/fourchettes.txt && say "J'ai enlevé $nbcompris fourchettes du stock."
+*REMET* (*) FOURCHETTE* STOCK*|*RANGE* (*) FOURCHETTE* STOCK*== nbcompris=(1) && test_math "(1)" && echo $(($(cat ~/madeofstock/fourchettes.txt)-$conv)) > ~/madeofstock/fourchettes.txt && say "J'ai remis $nbcompris fourchettes dans le stock."
 
-*ENLEVE* (*) CUILLERE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)+$convertchiffre)) > ~/madeofstock/cuilleres.txt && say "J'ai enlevé $nbcompris cuillères du stock."
-*REMET* (*) CUILLERE* STOCK*|*RANGE* (*) CUILLERE* STOCK*== nbcompris=(1) && fct_conv "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)-$convertchiffre)) > ~/madeofstock/cuilleres.txt && say "J'ai remis $nbcompris cuillères dans le stock."
+*ENLEVE* (*) CUILLERE* STOCK*== nbcompris=(1) && test_math "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)+$conv)) > ~/madeofstock/cuilleres.txt && say "J'ai enlevé $nbcompris cuillères du stock."
+*REMET* (*) CUILLERE* STOCK*|*RANGE* (*) CUILLERE* STOCK*== nbcompris=(1) && test_math "(1)" && echo $(($(cat ~/madeofstock/cuilleres.txt)-$conv)) > ~/madeofstock/cuilleres.txt && say "J'ai remis $nbcompris cuillères dans le stock."
 
 
 
