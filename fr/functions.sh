@@ -106,7 +106,7 @@ fi
 
 
 # Enregistrement de l'ensemble du matériel utilisé dans le fichier "matosutilise.txt".
-echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees" > ~/madeofstock/matosutilise.txt
+echo "On a utilisé : $fourchettesutilisees, $cuilleresutilisees." > ~/madeofstock/matosutilise.txt
 
 
 if [[ $(cat ~/madeofstock/matosutilise.txt) != *[0-9]* ]] # Si le fichier ne contient aucun chiffre, c'est qu'on a encore rien utilisé.
