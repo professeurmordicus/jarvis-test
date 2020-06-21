@@ -90,7 +90,7 @@ fi
 
 if [ -e ~/madeofstock/fourchettes.txt ] && [ $(cat ~/madeofstock/fourchettes.txt) != 0 ] # Si on a utilisé cet item et que son comptage est différent de 0,
 then
-    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes" # on l'inscrit dans la variable.
+    fourchettesutilisees="$(cat ~/madeofstock/fourchettes.txt) fourchettes," # on l'inscrit dans la variable.
 else
     fourchettesutilisees=""                                                 # Sinon, on met la variable à vide.
 fi
@@ -106,7 +106,7 @@ fi
 
 
 # Enregistrement de l'ensemble du matériel utilisé dans le fichier "matosutilise.txt".
-echo "On a utilisé : $fourchettesutilisees, $cuilleresutilisees." > ~/madeofstock/matosutilise.txt
+echo "On a utilisé : $fourchettesutilisees $cuilleresutilisees." > ~/madeofstock/matosutilise.txt
 
 
 if [[ $(cat ~/madeofstock/matosutilise.txt) != *[0-9]* ]] # Si le fichier ne contient aucun chiffre, c'est qu'on a encore rien utilisé.
