@@ -22,7 +22,7 @@
 #fct_conv () {
 
 #test_math $1
-#convertchiffre=$conv
+convertchiffre=" "
 #}
 
 
