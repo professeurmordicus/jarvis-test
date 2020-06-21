@@ -19,59 +19,59 @@
 
 
 # Appel de la fonction "test_math" et récupération de son résultat.
-#fct_conv () {
+fct_conv () {
 
-#test_math $1
-#convertchiffre=$conv
-#}
+test_math $1
+convertchiffre=$conv
+}
 
 
 
 # Convertion des chiffres lettrés en nombres.
 test_math () {
-convertchiffre=" "
+conv=" "
 if [[ $1 =~ "zéro" ]] ; then
-convertchiffre=0
+conv=0
 fi
 
 if [[ $1 =~ "un" ]] ; then
-convertchiffre=1
+conv=1
 fi
 
 if [[ $1 =~ "de" ]] ; then
-convertchiffre=2
+conv=2
 fi
 
 if [[ $1 =~ "trois" ]] ; then
-convertchiffre=3
+conv=3
 fi
 
 if [[ $1 =~ "quatre" ]] ; then
-convertchiffre=4
+conv=4
 fi
 
 if [[ $1 =~ "cinq" ]] ; then
-convertchiffre=5
+conv=5
 fi
 
 if [[ $1 =~ "six" ]] ; then
-convertchiffre=6
+conv=6
 fi
 
 if [[ $1 =~ "sept" ]] ; then
-convertchiffre=7
+conv=7
 fi
 
 if [[ $1 =~ "huit" ]] ; then
-convertchiffre=8
+conv=8
 fi
 
 if [[ $1 =~ "neuf" ]] ; then
-convertchiffre=9
+conv=9
 fi
 
 if [[ $conv == " " ]] ; then
-convertchiffre=$1
+conv=$1
 
 fi
 return
