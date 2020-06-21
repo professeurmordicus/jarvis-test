@@ -18,15 +18,6 @@
 
 
 
-# Appel de la fonction "test_math" et récupération de son résultat.
-#fct_conv () {
-
-#test_math $1
-#convertchiffre=$conv
-#}
-
-
-
 # Convertion des chiffres lettrés en nombres.
 test_math () {
 convertchiffre=" "
