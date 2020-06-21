@@ -15,11 +15,11 @@
 
 
 *COMBIEN* (*)== CONTINUER CETTE COMMANDE.
-# - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle.)
+# - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle. Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 
 
-# - Optimiser la liste du matériel utilisé. (Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
-# - En dernier, envoyer par mail.
+# - Optimiser la liste du matériel utilisé.
+# - Commande envoyer par mail : tester avec le logiciel des listes de course, puis avec sa version mise à jour.
 # - Faire la liste du matériel que peut gérer le plugin?
 # - Adapter le readme.
 # - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
