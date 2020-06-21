@@ -29,49 +29,49 @@
 
 # Convertion des chiffres lettrés en nombres.
 test_math () {
-conv=" "
+convertchiffre=" "
 if [[ $1 =~ "zéro" ]] ; then
-conv=0
+convertchiffre=0
 fi
 
 if [[ $1 =~ "un" ]] ; then
-conv=1
+convertchiffre=1
 fi
 
 if [[ $1 =~ "de" ]] ; then
-conv=2
+convertchiffre=2
 fi
 
 if [[ $1 =~ "trois" ]] ; then
-conv=3
+convertchiffre=3
 fi
 
 if [[ $1 =~ "quatre" ]] ; then
-conv=4
+convertchiffre=4
 fi
 
 if [[ $1 =~ "cinq" ]] ; then
-conv=5
+convertchiffre=5
 fi
 
 if [[ $1 =~ "six" ]] ; then
-conv=6
+convertchiffre=6
 fi
 
 if [[ $1 =~ "sept" ]] ; then
-conv=7
+convertchiffre=7
 fi
 
 if [[ $1 =~ "huit" ]] ; then
-conv=8
+convertchiffre=8
 fi
 
 if [[ $1 =~ "neuf" ]] ; then
-conv=9
+convertchiffre=9
 fi
 
 if [[ $conv == " " ]] ; then
-conv=$1
+convertchiffre=$1
 
 fi
 return
