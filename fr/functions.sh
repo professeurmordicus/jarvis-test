@@ -19,11 +19,11 @@
 
 
 # Appel de la fonction "test_math" et récupération de son résultat.
-fct_conv () {
+#fct_conv () {
 
-test_math $1
-convertchiffre=$conv
-}
+#test_math $1
+#convertchiffre=$conv
+#}
 
 
 
