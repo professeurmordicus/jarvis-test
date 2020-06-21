@@ -22,7 +22,7 @@
 #fct_conv () {
 
 #test_math $1
-convertchiffre=" "
+#convertchiffre=$conv
 #}
 
 
@@ -70,7 +70,7 @@ if [[ $1 =~ "neuf" ]] ; then
 convertchiffre=9
 fi
 
-if [[ $conv == " " ]] ; then
+if [[ $convertchiffre == " " ]] ; then
 convertchiffre=$1
 
 fi
