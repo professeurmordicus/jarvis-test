@@ -14,9 +14,11 @@
 
 
 
-*COMBIEN ON A UTILISE* (*)== say "(1)".
+#*COMBIEN ON A UTILISE* (*)== say "(1)".
 # - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle. Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
-*FAIT (*)==echo "capture: (1)"; echo "order: $order"
+DIS NOUS COMBIEN== say "Je dois trouver combien on a utiliser de?"
+>(*)==say "(1), $order" 
+
 
 # - Optimiser la liste du matériel utilisé.
 # - Commande envoyer par mail : tester avec le logiciel des listes de course, puis avec sa version mise à jour.
