@@ -19,6 +19,8 @@
 DIS NOUS COMBIEN== say "Je dois trouver combien on a utiliser de?"
 >(*)==find ~/madeofstock -name "*(1)*" -execdir var=$(cat {}) \; && echo "var"
 
+# IDEE EN VRAC : var=$(< tmp/machin/truc.truc) puis echo "$var".
+
 #>(*)==find ~/madeofstock -name "*(1)*" -exec itemutilise=$(cat /home/pi/madeofstock/fourchettes.txt) && echo "$itemutilise" \;
 
 #>(*)==itemutilise="" && find ~/madeofstock -name "*(1)*" -exec itemutilise=$(cat {}) \; && echo "$itemutilise" 
