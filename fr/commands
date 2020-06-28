@@ -17,7 +17,7 @@
 #*COMBIEN ON A UTILISE* (*)== say "(1)".
 # - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle. Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 DIS NOUS COMBIEN== say "Je dois trouver combien on a utiliser de?"
->(*)==find ~/madeofstock -name "*(1)*" -exec 'itemutilise=cat {}' \; && echo "$itemutilise"
+>(*)==find ~/madeofstock -name "*(1)*" -exec echo "On a utilisé" cat {} (1) \; # && echo "$itemutilise"
 
 #>(*)==find ~/madeofstock -name "*(1)*" -exec itemutilise=$(cat /home/pi/madeofstock/fourchettes.txt) && echo "$itemutilise" \;
 
