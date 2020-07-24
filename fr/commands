@@ -14,6 +14,26 @@
 
 
 
+*ENVOI*LA*LIST*MAIL*==fct_matosutil && mpack -s "Contenu de la liste du matériel utilisé." ~/madeofstock/matosutilise.txt madeofme.art@gmail.com && say "La liste du matériel a été envoyée sur Madeofme."
+
+
+
+
+
+
+# - Optimiser la liste du matériel utilisé.
+# - Commande envoyer par mail : tester avec le logiciel des listes de course, puis avec sa version mise à jour.
+# - Faire la liste du matériel que peut gérer le plugin?
+# - Adapter le readme.
+# - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
+# - Voir si quand il manque un fichier "fourchettes ou cuilleres.txt", et qu'on enlève un truc du stock, la création du 
+# fichier se fait sans problème en mode son, ou si Jarvis dit que le fichier n'existe pas avant de le créer." Si tout va bien,
+# on peut envisager de modifier la commande "REMET LA LISTE A ZERO", en lui faisant faire un rm de tout le dossier "madeofstock".
+# - Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
+
+
+
+
 #*COMBIEN ON A UTILISE* (*)== say "(1)".
 # - Faire commande "COMBIEN de xxx a-t-on utiliser"... (Optionnelle. Envisager de récupérer les fichiers créés dans le dossier madeofstock?)
 DIS NOUS COMBIEN== say "Je dois trouver combien on a utiliser de?"
@@ -33,19 +53,3 @@ DIS NOUS COMBIEN== say "Je dois trouver combien on a utiliser de?"
 # >(*)==find ~/madeofstock -name "*(1)*" -exec cat {} > ~/madeofstock/comptageitem.txt  \; && say "On a utilisé $(cat ~/madeofstock/comptageitem.txt) (1)."
 # -> OK, mais pas optimisée, car comptageitem.txt contient la même chose que le fichier trouvé... Voir si on peut utiliser directement le fichier trouvé.
 
-
-
-
-# - Optimiser la liste du matériel utilisé.
-# - Commande envoyer par mail : tester avec le logiciel des listes de course, puis avec sa version mise à jour.
-# - Faire la liste du matériel que peut gérer le plugin?
-# - Adapter le readme.
-# - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
-# - Voir si quand il manque un fichier "fourchettes ou cuilleres.txt", et qu'on enlève un truc du stock, la création du 
-# fichier se fait sans problème en mode son, ou si Jarvis dit que le fichier n'existe pas avant de le créer." Si tout va bien,
-# on peut envisager de modifier la commande "REMET LA LISTE A ZERO", en lui faisant faire un rm de tout le dossier "madeofstock".
-# - Pense bête : *TUPEPA (*)==fct_conv "(1)" && say "On obtient $convertchiffre."
-
-
-
-*ENVOI*LA*LIST*MAIL*==mpack -s "Contenu de la liste des courses" /home/pi/listedescourses.txt VOTREMAIL@hotmail.com && say "La liste des courses a été envoyer à VOTREPRENOM"
