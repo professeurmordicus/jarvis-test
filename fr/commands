@@ -22,7 +22,8 @@
 
 
 # - Optimiser la liste du matériel utilisé.
-# - Commande envoyer par mail : tester avec le logiciel des listes de course, puis avec sa version mise à jour.
+# - Commande envoyer par mail : MSMTP OK, voir si on utilise l'authentification à 2 facteurs ou si on autorise les applis - sécurisées.
+    Ensuite, formater la ligne de commande pour envoyer un mail correctement.
 # - Faire la liste du matériel que peut gérer le plugin?
 # - Adapter le readme.
 # - Voir ce qu'on peut faire pour les date de péremption. (Tâches Cron?)
